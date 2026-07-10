@@ -1,84 +1,80 @@
-<p align="center"><img src="https://massgrave.dev/img/logo_small.png" alt="MAS Logo"></p>
+<p align="center"><img src="https://massgrave.dev/img/logo_small.png" alt="MAS Logo">
 
-<h1 align="center">Microsoft  Activation  Scripts (MAS)</h1>
+<h1 align="center">Microsoft 激活脚本 (MAS)</h1>
 
-<p align="center">Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with advanced troubleshooting.</p>
+<p align="center">开源的 Windows 与 Office 激活工具，支持 HWID、Ohook、TSforge、在线 KMS 等多种激活方案，附带高级故障排查能力。
 
 <hr>
-  
-## How to Activate Windows / Office / Extended Security Updates (ESU)?
 
-### Method 1 - PowerShell ❤️
+## 如何激活 Windows / Office / 扩展安全更新 (ESU)？
 
-1. Click the **Start Menu**, type `PowerShell`, and open it.
+### 方法一 - PowerShell ❤️
 
-2. Copy and paste the code below and press **Enter.**  
-   - For **Windows 8.1, 10 and 11**:
+1. 点击 **开始菜单**，搜索 `PowerShell` 并打开。
+2. 复制下方代码粘贴到窗口，按 **回车**：
+   - **适用于 Windows 8.1 / 10 / 11**：
      ```
      irm https://get.activated.win | iex
      ```
-	 If the above is blocked (by ISP/DNS), try this (needs updated Windows 10 or 11):  
+	 如果上述地址被屏蔽（由ISP/DNS导致），请尝试此命令（需已更新的Windows 10或11）:  
 	 ```
 	 iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
 	 ```
-	- **Script not launching? Use the below-listed Method 2.**
-
-3. In the menu that appears, type the number corresponding to one of the **Green** options.
+	- **脚本无法启动？尝试方法2**
+3. 弹出菜单后，输入**绿色高亮选项**对应的数字，按回车执行。
 
 ---
 
-### Method 2 - Traditional (Windows Vista and later)
+### 方法二 - 传统模式（支持 Windows Vista 及以上）
 
-1.   Download the script:
-      *   [**MAS_AIO.cmd**](https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&download=true) (Direct script)
-      *   [**MAS_AIO.zip**](https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?$format=zip) (If the direct script is blocked by your browser)
-2.   Run the `MAS_AIO.cmd` file.
-3.   In the menu that appears, type the number corresponding to one of the **Green** options.
+1. 下载脚本：
+- [**MAS_AIO.cmd**](https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&download=true)（直接下载单文件脚本）
+- [**MAS_AIO.zip**](https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?$format=zip)（如果浏览器拦截直接下载链接，请下载压缩包）
+2. 双击运行 `MAS_AIO.cmd`。
+3. 弹出菜单后，输入**绿色高亮选项**对应的数字，按回车执行。
 
 ---
 
 > [!TIP]
-> - Some ISPs/DNS providers block access to our domains. You can bypass this by enabling [DNS-over-HTTPS (DoH)](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/encrypted-dns-browsers/) in your browser. 
-> - **Having trouble**? Visit our [troubleshooting page](https://massgrave.dev/troubleshoot) or raise an issue on [GitHub](https://github.com/massgravel/Microsoft-Activation-Scripts/issues).
+> - 部分运营商或DNS服务商会屏蔽我们的域名，可在浏览器开启 [DNS-over-HTTPS (DoH)](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/encrypted-dns-browsers/) 绕过限制。
+> - **遇到问题？** 可访问 [故障排查页面](https://massgrave.dev/troubleshoot)，或在 [GitHub Issues](https://github.com/massgravel/Microsoft-Activation-Scripts/issues) 提交反馈。
 
 > [!NOTE]
->
-> - The `irm` command in PowerShell downloads a script from a specified URL, and the `iex` command executes it.
-> - Always double-check the URL before executing the command and verify the source is trustworthy when manually downloading files.
-> - Be cautious of third parties spreading malware disguised as MAS by altering the URL in the PowerShell command.
+> - PowerShell 中 `irm` 用于下载脚本，`iex` 用于执行脚本。
+> - 执行前务必核对URL地址，手动下载请确认来源可信。
+> - 警惕第三方篡改PowerShell命令中的URL，将恶意软件伪装成MAS传播。
 
 ---
 
 <div align="center">
-	
-### Homepage - [https://massgrave.dev/](https://massgrave.dev/)
-  
-[![1.1]][1]
-[![1.2]][2]
-[![1.3]][3]
-[![1.4]][4]
-[![1.5]][5]
-[![1.6]][6]
-[![1.7]][7]
 
-[1.1]: https://massgrave.dev/img/logo_discord.png (Chat with us without signup)
-[1.2]: https://massgrave.dev/img/logo_reddit.png (Reddit)
-[1.3]: https://massgrave.dev/img/logo_bluesky.png (Bluesky)
-[1.4]: https://massgrave.dev/img/logo_x.png (Twitter)
+### 项目主页 - [https://massgrave.dev/](https://massgrave.dev/)
 
-[1.5]: https://massgrave.dev/img/logo_github.png (GitHub)
-[1.6]: https://massgrave.dev/img/logo_azuredevops.png (AzureDevOps)
-[1.7]: https://massgrave.dev/img/logo_gitea.png (Self-hosted Git)
+[![Discord]][Discord-Link]
+[![Reddit]][Reddit-Link]
+[![Bluesky]][Bluesky-Link]
+[![X/Twitter]][X-Link]
+[![GitHub]][GitHub-Link]
+[![Azure DevOps]][Azure-Link]
+[![自建Git]][Gitea-Link]
+[![汉化Git]][Chinese-Link]
 
-[1]: https://discord.gg/j2yFsV5ZVC
-[2]: https://www.reddit.com/r/MAS_Activator
-[3]: https://bsky.app/profile/massgrave.dev
-[4]: https://twitter.com/massgravel
-[5]: https://github.com/massgravel/Microsoft-Activation-Scripts
-[6]: https://dev.azure.com/massgrave/_git/Microsoft-Activation-Scripts
-[7]: https://git.activated.win/Microsoft-Activation-Scripts
+[Discord]: https://massgrave.dev/img/logo_discord.png "(无需注册，直接加入聊天)"
+[Reddit]: https://massgrave.dev/img/logo_reddit.png "(Reddit社区)"
+[Bluesky]: https://massgrave.dev/img/logo_bluesky.png "(Bluesky主页)"
+[X/Twitter]: https://massgrave.dev/img/logo_x.png "(X/Twitter主页)"
+
+[GitHub]: https://massgrave.dev/img/logo_github.png "(GitHub仓库)"
+[Azure DevOps]: https://massgrave.dev/img/logo_azuredevops.png "(Azure DevOps仓库)"
+[自建Git]: https://massgrave.dev/img/logo_gitea.png "(自建Git仓库)"
+[汉化Git]:https://massgrave.dev/img/logo_github.png "(汉化仓库)"
+[Discord-Link]: https://discord.gg/j2yFsV5ZVC
+[Reddit-Link]: https://www.reddit.com/r/MAS_Activator
+[Bluesky-Link]: https://bsky.app/profile/massgrave.dev
+[X-Link]: https://twitter.com/massgravel
+[GitHub-Link]: https://github.com/massgravel/Microsoft-Activation-Scripts
+[Chinese-Link]: https://github.com/MoyuanMaris/Microsoft-Activation-Scripts-Chinese
+[Azure-Link]: https://dev.azure.com/massgrave/_git/Microsoft-Activation-Scripts
+[Gitea-Link]: https://git.activated.win/Microsoft-Activation-Scripts
 
 ---
-
-Latest Version: 3.12  
-Release date: 04-Jul-2026
